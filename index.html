@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework 9</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+</head>
+
+<body>
+
+    <div class="main-page">
+    <h1 class="title">FIT3179 Homework Week 10</h1>
+    <div class="vis-container">
+        <h2 class="vis-title">Number of Movies Released from 2010-2020</h2>
+        <div id="choropleth_map"></div>
+    </div>
+    <div class="vis-container">
+        <h2 class="vis-title">Top 10 Voted Movies</h2>
+        <div id="bar_rated"></div>
+    </div>
+
+    </div>   <!--end page-->
+
+    <script type="text/javascript">
+
+        var spec1 = "js/movies_map.json";
+        var spec2 = "js/top_rated.json";
+
+        vegaEmbed('#choropleth_map', spec1, {"actions":false}).then(function(result) {
+        }).catch(console.error);
+
+        vegaEmbed('#bar_rated', spec2, {"actions":false}).then(function(result) {
+        }).catch(console.error);
+    </script>
+    
+</body>
+</html>

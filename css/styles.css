@@ -1,0 +1,37 @@
+.main-page{
+    background-color: #FEF7DC;
+    width: 1050px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.title{
+    margin-top: 0;
+}
+
+.vis-container{
+    margin-top: 30px;
+    margin: 0 auto;
+    padding-left: 10%;
+}
+
+.vega-bind{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.vega-bind select{
+    width: 100px;
+    margin-left: 10px;
+    border: none;
+    font-size: medium;
+}
